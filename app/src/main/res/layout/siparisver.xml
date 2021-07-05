@@ -1,0 +1,256 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/arkaplan">
+
+    <ScrollView
+        android:id="@+id/scrollView2"
+        android:layout_width="193dp"
+        android:layout_height="508dp"
+        android:layout_marginStart="16dp"
+        android:layout_marginLeft="16dp"
+        android:layout_marginEnd="17dp"
+        android:layout_marginRight="17dp"
+        android:layout_marginBottom="28dp"
+        app:layout_constraintBottom_toTopOf="@+id/textView9"
+        app:layout_constraintEnd_toStartOf="@+id/scrollView3"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textView3">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@color/acikmor"
+            android:orientation="vertical">
+
+            <CheckBox
+                android:id="@+id/domatescorbasi"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:onClick="kontrolet"
+                android:text="Domates Çorbası.. 5 TL" />
+
+            <CheckBox
+                android:id="@+id/mantarcorbasi"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:onClick="kontrolet"
+                android:text="Mantar Çorbası..5TL" />
+
+            <CheckBox
+                android:id="@+id/peynirlimakarna"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:onClick="kontrolet"
+                android:text="Peynirli Makarna..8TL" />
+
+            <CheckBox
+                android:id="@+id/iclikofte"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:onClick="kontrolet"
+                android:text="İçli Köfte..8TL" />
+
+            <CheckBox
+                android:id="@+id/yapraksarma"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:onClick="kontrolet"
+                android:text="Yaprak Sarma..10TL" />
+
+            <CheckBox
+                android:id="@+id/kizarmistavuk"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:onClick="kontrolet"
+                android:text="Kızarmış Tavuk..13TL" />
+
+            <CheckBox
+                android:id="@+id/hamburger"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:onClick="kontrolet"
+                android:text="Hamburger..15TL" />
+
+            <CheckBox
+                android:id="@+id/mevsimsalata"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:onClick="kontrolet"
+                android:text="Mevsim Salatası..10TL" />
+
+            <CheckBox
+                android:id="@+id/adanakebap"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:onClick="kontrolet"
+                android:text="Adana Kebap..18TL" />
+
+            <CheckBox
+                android:id="@+id/patateskizartma"
+                android:layout_width="match_parent"
+                android:layout_height="59dp"
+                android:onClick="kontrolet"
+                android:text="Patates Kızartması..10TL" />
+
+        </LinearLayout>
+    </ScrollView>
+
+    <TextView
+        android:id="@+id/textView3"
+        android:layout_width="217dp"
+        android:layout_height="48dp"
+        android:layout_marginTop="25dp"
+        android:layout_marginEnd="60dp"
+        android:layout_marginRight="60dp"
+        android:layout_marginBottom="44dp"
+        android:fontFamily="cursive"
+        android:text="Siparis Ver"
+        android:textSize="40dp"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toTopOf="@+id/scrollView2"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <ScrollView
+        android:id="@+id/scrollView3"
+        android:layout_width="189dp"
+        android:layout_height="481dp"
+        android:layout_marginTop="119dp"
+        android:layout_marginEnd="16dp"
+        android:layout_marginRight="16dp"
+        android:layout_marginBottom="39dp"
+        app:layout_constraintBottom_toTopOf="@+id/siptamamla"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/scrollView2"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@color/acikmor"
+            android:orientation="vertical">
+
+            <CheckBox
+                android:id="@+id/doner"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:onClick="kontrolet"
+                android:text="Döner..13TL" />
+
+            <CheckBox
+                android:id="@+id/ekler"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:onClick="kontrolet"
+                android:text="Ekler..10TL" />
+
+            <CheckBox
+                android:id="@+id/kazandibi"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:onClick="kontrolet"
+                android:text="Kazandibi..10TL" />
+
+            <CheckBox
+                android:id="@+id/kunefe"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:onClick="kontrolet"
+                android:text="Künefe..18TL" />
+
+            <CheckBox
+                android:id="@+id/baklava"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:onClick="kontrolet"
+                android:text="Baklava..13TL" />
+
+            <CheckBox
+                android:id="@+id/soda"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:onClick="kontrolet"
+                android:text="Soda..3TL" />
+
+            <CheckBox
+                android:id="@+id/su"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:onClick="kontrolet"
+                android:text="Su..2TL" />
+
+            <CheckBox
+                android:id="@+id/kola"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:onClick="kontrolet"
+                android:text="Kola..5TL" />
+
+            <CheckBox
+                android:id="@+id/gazoz"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:onClick="kontrolet"
+                android:text="Gazoz..5TL" />
+
+            <CheckBox
+                android:id="@+id/turkkahvesi"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:onClick="kontrolet"
+                android:text="Türk Kahvesi..5TL" />
+
+        </LinearLayout>
+    </ScrollView>
+
+    <TextView
+        android:id="@+id/tutar"
+        android:layout_width="0dp"
+        android:layout_height="32dp"
+        android:layout_marginEnd="39dp"
+        android:layout_marginRight="39dp"
+        android:background="@color/acikmor"
+        android:text="     0 TL"
+        android:textColor="@color/black"
+        app:layout_constraintBaseline_toBaselineOf="@+id/textView9"
+        app:layout_constraintEnd_toStartOf="@+id/siptamamla"
+        app:layout_constraintStart_toEndOf="@+id/textView9" />
+
+    <TextView
+        android:id="@+id/textView9"
+        android:layout_width="107dp"
+        android:layout_height="35dp"
+        android:layout_gravity="center_horizontal"
+        android:layout_marginStart="16dp"
+        android:layout_marginLeft="16dp"
+        android:layout_marginEnd="18dp"
+        android:layout_marginRight="18dp"
+        android:layout_marginBottom="33dp"
+        android:background="@color/acikmor"
+        android:text="TOPLAM TUTAR"
+        android:textAlignment="center"
+        android:textColor="@color/black"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toStartOf="@+id/tutar"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/scrollView2" />
+
+    <Button
+        android:id="@+id/siptamamla"
+        android:layout_width="122dp"
+        android:layout_height="60dp"
+        android:layout_marginEnd="30dp"
+        android:layout_marginRight="30dp"
+        android:layout_marginBottom="27dp"
+        android:text="SEPETE GIT"
+        app:backgroundTint="@color/lacivert"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/tutar"
+        app:layout_constraintTop_toBottomOf="@+id/scrollView3" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>

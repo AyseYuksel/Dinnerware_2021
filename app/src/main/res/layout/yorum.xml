@@ -1,0 +1,97 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/arkaplan">
+
+    <ImageView
+        android:id="@+id/yorumresim"
+        android:layout_width="265dp"
+        android:layout_height="303dp"
+        android:layout_marginTop="15dp"
+        android:layout_marginEnd="32dp"
+        android:layout_marginRight="32dp"
+        android:layout_marginBottom="20dp"
+        app:layout_constraintBottom_toTopOf="@+id/ratingBar2"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:srcCompat="@drawable/yorum" />
+
+    <EditText
+        android:id="@+id/yorumkutusu"
+        android:layout_width="379dp"
+        android:layout_height="130dp"
+        android:layout_marginStart="20dp"
+        android:layout_marginLeft="20dp"
+        android:layout_marginEnd="20dp"
+        android:layout_marginRight="20dp"
+        android:layout_marginBottom="29dp"
+        android:background="@color/acikmor"
+        android:ems="10"
+        android:gravity="start"
+        android:hint="Yorum Giriniz.."
+        android:textAlignment="viewStart"
+        android:textColor="@color/black"
+        app:layout_constraintBottom_toTopOf="@+id/yorumgonder"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/durumbilgisi" />
+
+    <RatingBar
+        android:id="@+id/ratingBar2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginEnd="40dp"
+        android:layout_marginRight="40dp"
+        android:layout_marginBottom="15dp"
+        android:background="@color/purple_200"
+        android:numStars="5"
+        app:layout_constraintBottom_toTopOf="@+id/durumbilgisi"
+        app:layout_constraintEnd_toEndOf="@+id/yorumresim"
+        app:layout_constraintTop_toBottomOf="@+id/yorumresim" />
+
+    <Button
+        android:id="@+id/yorumgonder"
+        android:layout_width="147dp"
+        android:layout_height="57dp"
+        android:layout_marginStart="40dp"
+        android:layout_marginLeft="40dp"
+        android:layout_marginEnd="20dp"
+        android:layout_marginRight="20dp"
+        android:layout_marginBottom="15dp"
+        android:text="Gönder"
+        app:backgroundTint="@color/purple_200"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toStartOf="@+id/yorumlarekrani"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/yorumkutusu" />
+
+    <TextView
+        android:id="@+id/durumbilgisi"
+        android:layout_width="252dp"
+        android:layout_height="60dp"
+        android:layout_marginBottom="18dp"
+        android:textColor="@color/black"
+        android:textSize="25dp"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toTopOf="@+id/yorumkutusu"
+        app:layout_constraintEnd_toEndOf="@+id/ratingBar2"
+        app:layout_constraintStart_toStartOf="@+id/ratingBar2"
+        app:layout_constraintTop_toBottomOf="@+id/ratingBar2" />
+
+    <Button
+        android:id="@+id/yorumlarekrani"
+        android:layout_width="168dp"
+        android:layout_height="59dp"
+        android:layout_marginEnd="30dp"
+        android:layout_marginRight="30dp"
+        android:text="Diğer Yorumlar"
+        app:backgroundTint="@color/purple_200"
+        app:layout_constraintBottom_toBottomOf="@+id/yorumgonder"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/yorumgonder"
+        app:layout_constraintTop_toTopOf="@+id/yorumgonder"
+        app:layout_constraintVertical_bias="0.0" />
+</androidx.constraintlayout.widget.ConstraintLayout>

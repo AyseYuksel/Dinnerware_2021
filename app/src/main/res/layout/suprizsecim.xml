@@ -1,0 +1,117 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/arkaplan">
+
+    <TextView
+        android:id="@+id/textView11"
+        android:layout_width="218dp"
+        android:layout_height="45dp"
+        android:layout_marginTop="30dp"
+        android:layout_marginEnd="86dp"
+        android:layout_marginRight="86dp"
+        android:layout_marginBottom="139dp"
+        android:fontFamily="cursive"
+        android:gravity="center_horizontal"
+        android:text="Supriz Secim"
+        android:textAlignment="center"
+        android:textSize="40dp"
+        app:layout_constraintBottom_toTopOf="@+id/yemekradio"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <Button
+        android:id="@+id/suprizbilgi"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:layout_marginStart="4dp"
+        android:layout_marginLeft="4dp"
+        android:layout_marginTop="93dp"
+        android:layout_marginEnd="16dp"
+        android:layout_marginRight="16dp"
+        android:layout_marginBottom="63dp"
+        app:backgroundTint="@color/purple_200"
+        app:icon="@android:drawable/ic_dialog_info"
+        app:layout_constraintBottom_toTopOf="@+id/yemekradio"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/textView11"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <RadioGroup
+        android:id="@+id/yemekradio"
+        android:layout_width="306dp"
+        android:layout_height="193dp"
+        android:layout_marginStart="52dp"
+        android:layout_marginLeft="52dp"
+        android:layout_marginEnd="52dp"
+        android:layout_marginRight="52dp"
+        android:layout_marginBottom="318dp"
+        android:background="@color/purple_200"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textView11">
+
+        <RadioButton
+            android:id="@+id/secim1"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="1 Çorba + 1 Ana Yemek Menüsü" />
+
+        <RadioButton
+            android:id="@+id/secim2"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="1 Ana Yemek + 1 İçecek Menüsü" />
+
+        <RadioButton
+            android:id="@+id/secim3"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="1 Tatlı + 1 İçecek Menüsü" />
+
+        <RadioButton
+            android:id="@+id/secim4"
+            android:layout_width="match_parent"
+            android:layout_height="38dp"
+            android:text="1 Çorba + 1 Ana Yemek + 1 Tatlı Menüsü" />
+    </RadioGroup>
+
+    <Button
+        android:id="@+id/menuolustur"
+        android:layout_width="262dp"
+        android:layout_height="60dp"
+        android:layout_marginStart="73dp"
+        android:layout_marginLeft="73dp"
+        android:layout_marginEnd="73dp"
+        android:layout_marginRight="73dp"
+        android:layout_marginBottom="35dp"
+        android:text="Rastgele Menu Olustur"
+        app:layout_constraintBottom_toTopOf="@+id/menugoruntule"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.333"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/yemekradio" />
+
+    <TextView
+        android:id="@+id/menugoruntule"
+        android:layout_width="281dp"
+        android:layout_height="145dp"
+        android:layout_marginStart="65dp"
+        android:layout_marginLeft="65dp"
+        android:layout_marginEnd="65dp"
+        android:layout_marginRight="65dp"
+        android:layout_marginBottom="54dp"
+        android:background="@color/purple_200"
+        android:gravity="center_horizontal"
+        android:textAlignment="center"
+        android:textColor="@color/black"
+        android:textSize="20dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/menuolustur" />
+</androidx.constraintlayout.widget.ConstraintLayout>
